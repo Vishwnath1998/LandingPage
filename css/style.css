@@ -1,0 +1,85 @@
+.container{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+.bg-image  {
+    background-image: url(https://colorlib.com/etc/cs/comingsoon_07/images/bg01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  
+}
+ .container::before{
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%; 
+    height: 100%;
+    background: -webkit-linear-gradient(bottom,#b224ef,#7579ff);
+    opacity: 0.8;
+}
+.section{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    color: #ffff;
+    padding: 50px;
+}
+.header_one{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-bottom: 25px;
+}
+.header_two{
+    display: flex;
+    flex-direction: row;
+    font-family:inherit
+}
+nav a {
+    color: #ffff;
+    padding: 5px;
+    text-decoration: none;
+}
+.header_two > nav :hover{
+    border: 5px solid rgb(216, 22, 22);
+    /* background-color: rgb(213, 235, 22); */
+}
+.middle_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    position: relative;
+}
+.middle_section > p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30px;
+    color: #ffff;
+    padding: 50px;
+}
+ input {
+    display: block;
+    width: 50%;
+    height: 10%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgb(223, 209, 17);
+    text-decoration: none;
+
+}
+.Footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+    position: relative;
+}
